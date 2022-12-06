@@ -32,81 +32,122 @@ int[] arrayTwo = new int[3];
 int[] arrayThree = new int[3];
 
 void StepGamerOne(int step)
-   {if (step == 1)
+   {if (step == 1 && arrayOne[0] == 0)
+   {
         arrayOne[0] = 1;
-    else if (step == 2)
+        GameStep++;
+        Gamer++;
+    }    
+    else if (step == 2 && arrayOne[1] == 0)
     {
         arrayOne[1] = 1;
+        GameStep++;
+        Gamer++;
     }
-    else if (step == 3)
+    else if (step == 3 && arrayOne[2] == 0)
     {
         arrayOne[2] = 1;
+        GameStep++;
+        Gamer++;
     }
-    else if (step == 4)
+    else if (step == 4 && arrayOne[0] == 0)
     {
         arrayTwo[0] = 1;
+        GameStep++;
+        Gamer++;
     }
-    else if (step == 5)
+    else if (step == 5 && arrayOne[1] == 0)
     {
         arrayTwo[1] = 1;
+        GameStep++;
+        Gamer++;
     }
-    else if (step == 6)
+    else if (step == 6 && arrayOne[2] == 0)
     {
         arrayTwo[2] = 1;
+        GameStep++;
+        Gamer++;
     }
-    else if (step == 7)
+    else if (step == 7 && arrayOne[0] == 0)
     {
         arrayThree[0] = 1;
+        GameStep++;
+        Gamer++;
     }
-    else if (step == 8)
+    else if (step == 8 && arrayOne[1] == 0)
     {
         arrayThree[1] = 1;
+        GameStep++;
+        Gamer++;
     }
-    else if (step == 9)
+    else if (step == 9 && arrayOne[2] == 0)
     {
         arrayThree[2] = 1;
+        GameStep++;
+        Gamer++;
     }
     else
     {
         Console.WriteLine("Вы ввели неверное число");
+        
     }
    }
 
 void StepGamerTwo(int step)
    {
-    if (step == 1)
+    if (step == 1 && arrayOne[0] == 0)
+    {    
         arrayOne[0] = 2;
-    else if (step == 2)
+        GameStep++;
+        Gamer--;
+    }
+    else if (step == 2 && arrayOne[1] == 0) 
     {
         arrayOne[1] = 2;
+        GameStep++;
+        Gamer--;
     }
-    else if (step == 3)
+    else if (step == 3 && arrayOne[2] == 0)
     {
         arrayOne[2] = 2;
+        GameStep++;
+        Gamer--;
     }
-    else if (step == 4)
+    else if (step == 4 && arrayOne[0] == 0)
     {
         arrayTwo[0] = 2;
+        GameStep++;
+        Gamer--;
     }
-    else if (step == 5)
+    else if (step == 5 && arrayOne[1] == 0)
     {
         arrayTwo[1] = 2;
+        GameStep++;
+        Gamer--;
     }
-    else if (step == 6)
+    else if (step == 6 && arrayOne[2] == 0)
     {
         arrayTwo[2] = 2;
+        GameStep++;
+        Gamer--;
     }
-    else if (step == 7)
+    else if (step == 7 && arrayOne[0] == 0)
     {
         arrayThree[0] = 2;
+        GameStep++;
+        Gamer--;
     }
-    else if (step == 8)
+    else if (step == 8 && arrayOne[1] == 0)
     {
         arrayThree[1] = 2;
+        GameStep++;
+        Gamer--;
     }
-    else if (step == 9)
+    else if (step == 9 && arrayOne[2] == 0)
     {
         arrayThree[2] = 2;
+        GameStep++;
+        Gamer--;
     }
     else
     {
@@ -134,7 +175,6 @@ while (GameStep < GameLenght)
     Console.WriteLine(" ");
     PrintArray(arrayThree);
     Console.WriteLine(" ");
-    Gamer++;
     }
     else
     {
@@ -147,8 +187,9 @@ while (GameStep < GameLenght)
     Console.WriteLine(" ");
     PrintArray(arrayThree);
     Console.WriteLine(" ");
-    Gamer--;
+    
 
     }
-    GameStep++;
+   
 }
+

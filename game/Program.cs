@@ -31,6 +31,16 @@ int[] arrayOne = new int[3];
 int[] arrayTwo = new int[3];
 int[] arrayThree = new int[3];
 
+void PrintGameField()
+{
+    PrintArray(arrayOne);
+    Console.WriteLine(" ");
+    PrintArray(arrayTwo);
+    Console.WriteLine(" ");
+    PrintArray(arrayThree);
+    Console.WriteLine(" ");
+}
+
 void StepGamerOne(int step)
    {if (step == 1 && arrayOne[0] == 0)
    {
@@ -50,37 +60,37 @@ void StepGamerOne(int step)
         GameStep++;
         Gamer++;
     }
-    else if (step == 4 && arrayOne[0] == 0)
+    else if (step == 4 && arrayTwo[0] == 0)
     {
         arrayTwo[0] = 1;
         GameStep++;
         Gamer++;
     }
-    else if (step == 5 && arrayOne[1] == 0)
+    else if (step == 5 && arrayTwo[1] == 0)
     {
         arrayTwo[1] = 1;
         GameStep++;
         Gamer++;
     }
-    else if (step == 6 && arrayOne[2] == 0)
+    else if (step == 6 && arrayTwo[2] == 0)
     {
         arrayTwo[2] = 1;
         GameStep++;
         Gamer++;
     }
-    else if (step == 7 && arrayOne[0] == 0)
+    else if (step == 7 && arrayThree[0] == 0)
     {
         arrayThree[0] = 1;
         GameStep++;
         Gamer++;
     }
-    else if (step == 8 && arrayOne[1] == 0)
+    else if (step == 8 && arrayThree[1] == 0)
     {
         arrayThree[1] = 1;
         GameStep++;
         Gamer++;
     }
-    else if (step == 9 && arrayOne[2] == 0)
+    else if (step == 9 && arrayThree[2] == 0)
     {
         arrayThree[2] = 1;
         GameStep++;
@@ -113,37 +123,37 @@ void StepGamerTwo(int step)
         GameStep++;
         Gamer--;
     }
-    else if (step == 4 && arrayOne[0] == 0)
+    else if (step == 4 &&  arrayTwo[0] == 0)
     {
         arrayTwo[0] = 2;
         GameStep++;
         Gamer--;
     }
-    else if (step == 5 && arrayOne[1] == 0)
+    else if (step == 5 &&  arrayTwo[1] == 0)
     {
         arrayTwo[1] = 2;
         GameStep++;
         Gamer--;
     }
-    else if (step == 6 && arrayOne[2] == 0)
+    else if (step == 6 &&  arrayTwo[2] == 0)
     {
         arrayTwo[2] = 2;
         GameStep++;
         Gamer--;
     }
-    else if (step == 7 && arrayOne[0] == 0)
+    else if (step == 7 && arrayThree[0] == 0)
     {
         arrayThree[0] = 2;
         GameStep++;
         Gamer--;
     }
-    else if (step == 8 && arrayOne[1] == 0)
+    else if (step == 8 && arrayThree[1] == 0)
     {
         arrayThree[1] = 2;
         GameStep++;
         Gamer--;
     }
-    else if (step == 9 && arrayOne[2] == 0)
+    else if (step == 9 && arrayThree[2] == 0)
     {
         arrayThree[2] = 2;
         GameStep++;
@@ -155,12 +165,7 @@ void StepGamerTwo(int step)
     }
    }
 
-PrintArray(arrayOne);
-Console.WriteLine(" ");
-PrintArray(arrayTwo);
-Console.WriteLine(" ");
-PrintArray(arrayThree);
-Console.WriteLine(" ");
+PrintGameField();
 
 while (GameStep < GameLenght)
 {   if (Gamer == 0)
@@ -169,27 +174,18 @@ while (GameStep < GameLenght)
    
     int step = Convert.ToInt32(Console.ReadLine());
     StepGamerOne(step);
-    PrintArray(arrayOne);
-    Console.WriteLine(" ");
-    PrintArray(arrayTwo);
-    Console.WriteLine(" ");
-    PrintArray(arrayThree);
-    Console.WriteLine(" ");
+    PrintGameField();
     }
     else
     {
     Console.WriteLine($"{name2} Введите число от 1 до 9, введенное число соответствует клетке поля: ");
     int step = Convert.ToInt32(Console.ReadLine());
     StepGamerTwo(step);
-    PrintArray(arrayOne);
-    Console.WriteLine(" ");
-    PrintArray(arrayTwo);
-    Console.WriteLine(" ");
-    PrintArray(arrayThree);
-    Console.WriteLine(" ");
+    PrintGameField();
     
 
     }
    
 }
+
 

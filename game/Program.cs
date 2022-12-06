@@ -27,10 +27,6 @@ void PrintArray(int[] array)
     }
 }
 
-
-
-
-
 int[] arrayOne = new int[3];
 int[] arrayTwo = new int[3];
 int[] arrayThree = new int[3];
@@ -76,25 +72,61 @@ void StepGamerOne(int step)
     }
    }
 
+void StepGamerTwo(int step)
+   {
+    if (step == 1)
+        arrayOne[0] = 2;
+    else if (step == 2)
+    {
+        arrayOne[1] = 2;
+    }
+    else if (step == 3)
+    {
+        arrayOne[2] = 2;
+    }
+    else if (step == 4)
+    {
+        arrayTwo[0] = 2;
+    }
+    else if (step == 5)
+    {
+        arrayTwo[1] = 2;
+    }
+    else if (step == 6)
+    {
+        arrayTwo[2] = 2;
+    }
+    else if (step == 7)
+    {
+        arrayThree[0] = 2;
+    }
+    else if (step == 8)
+    {
+        arrayThree[1] = 2;
+    }
+    else if (step == 9)
+    {
+        arrayThree[2] = 2;
+    }
+    else
+    {
+        Console.WriteLine("Вы ввели неверное число");
+    }
+   }
+
 PrintArray(arrayOne);
 Console.WriteLine(" ");
 PrintArray(arrayTwo);
 Console.WriteLine(" ");
 PrintArray(arrayThree);
 Console.WriteLine(" ");
+
 while (GameStep < GameLenght)
 {   if (Gamer == 0)
     {
-        Console.WriteLine($"{name1} Введите число от 1 до 9, введенное число соответствует клетке поля: ");
-        Gamer++;
-    }
-    else
-    {
-        Console.WriteLine($"{name2} Введите число от 1 до 9, введенное число соответствует клетке поля: ");
-        Gamer--;
-    }
+    Console.WriteLine($"{name1} Введите число от 1 до 9, введенное число соответствует клетке поля: ");
+   
     int step = Convert.ToInt32(Console.ReadLine());
-
     StepGamerOne(step);
     PrintArray(arrayOne);
     Console.WriteLine(" ");
@@ -102,5 +134,21 @@ while (GameStep < GameLenght)
     Console.WriteLine(" ");
     PrintArray(arrayThree);
     Console.WriteLine(" ");
+    Gamer++;
+    }
+    else
+    {
+    Console.WriteLine($"{name2} Введите число от 1 до 9, введенное число соответствует клетке поля: ");
+    int step = Convert.ToInt32(Console.ReadLine());
+    StepGamerTwo(step);
+    PrintArray(arrayOne);
+    Console.WriteLine(" ");
+    PrintArray(arrayTwo);
+    Console.WriteLine(" ");
+    PrintArray(arrayThree);
+    Console.WriteLine(" ");
+    Gamer--;
+
+    }
     GameStep++;
 }

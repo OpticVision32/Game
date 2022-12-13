@@ -170,9 +170,6 @@ PrintGameField();
 
 while (GameStep < GameLenght)
 {
-    // if ((arrayOne[0] == 1 && arrayOne[1] == 1 && arrayOne[2] == 1) || (arrayTwo[0] == 1 && arrayTwo[1] == 1 && arrayTwo[2] == 1) || (arrayThree[0] == 1 && arrayThree[1] == 1 && arrayThree[2] == 1) || (arrayOne[0] == 2 && arrayOne[1] == 2 && arrayOne[2] == 2) || (arrayTwo[0] == 2 && arrayTwo[2] == 1 && arrayTwo[2] == 2) || (arrayThree[0] == 2 && arrayThree[1] == 2 && arrayThree[2] == 2) || (arrayOne[0] == 1 && arrayTwo[1] == 1 && arrayThree[2] == 1) || (arrayOne[2] == 1 && arrayTwo[1] == 1 && arrayThree[0] == 1) || (arrayOne[0] == 2 && arrayTwo[1] == 2 && arrayThree[2] == 2) || (arrayOne[2] == 2 && arrayTwo[1] == 2 && arrayThree[0] == 2) || (arrayOne[0] == 1 && arrayTwo[0] == 1 && arrayThree[0] == 1) || (arrayOne[1] == 1 && arrayTwo[1] == 1 && arrayThree[1] == 1) || (arrayOne[2] == 1 && arrayTwo[2] == 1 && arrayThree[2] == 1) || (arrayOne[0] == 2 && arrayTwo[0] == 2 && arrayThree[0] == 2) || (arrayOne[1] == 2 && arrayTwo[1] == 2 && arrayThree[1] == 2) || (arrayOne[2] == 2 && arrayTwo[2] == 2 && arrayThree[2] == 2))
-    // {
-
     if (Gamer == 0)
     {
         Console.WriteLine($"{name1} Введите число от 1 до 9, введенное число соответствует клетке поля: ");
@@ -184,8 +181,6 @@ while (GameStep < GameLenght)
         System.Console.WriteLine($"{name1} Вы победили!");
         break;}
    }
-
-    
     else
     {
         Console.WriteLine($"{name2} Введите число от 1 до 9, введенное число соответствует клетке поля: ");
@@ -196,24 +191,6 @@ while (GameStep < GameLenght)
         break;}
    }
 }
-
-
-
-// else
-// {
-//     Console.WriteLine("Вы победили!");
-// }
-
-
-
-// void isWinner(int[] arrayOne, int[] arrayTwo, int[] arrayThree)
-// {
-//    if ((arrayOne[0] == 1 && arrayOne[1] == 1 && arrayOne[2] == 1) || (arrayTwo[0] == 1 && arrayTwo[1] == 1 && arrayTwo[2] == 1) || (arrayThree[0] == 1 && arrayThree[1] == 1 && arrayThree[2] == 1) || (arrayOne[0] == 2 && arrayOne[1] == 2 && arrayOne[2] == 2) || (arrayTwo[0] == 2 && arrayTwo[2] == 1 && arrayTwo[2] == 2) || (arrayThree[0] == 2 && arrayThree[1] == 2 && arrayThree[2] == 2) || (arrayOne[0] == 1 && arrayTwo[1] == 1 && arrayThree[2] == 1) || (arrayOne[2] == 1 && arrayTwo[1] == 1 && arrayThree[0] == 1) || (arrayOne[0] == 2 && arrayTwo[1] == 2 && arrayThree[2] == 2) || (arrayOne[2] == 2 && arrayTwo[1] == 2 && arrayThree[0] == 2) || (arrayOne[0] == 1 && arrayTwo[0] == 1 && arrayThree[0] == 1) || (arrayOne[1] == 1 && arrayTwo[1] == 1 && arrayThree[1] == 1) || (arrayOne[2] == 1 && arrayTwo[2] == 1 && arrayThree[2] == 1) || (arrayOne[0] == 2 && arrayTwo[0] == 2 && arrayThree[0] == 2) || (arrayOne[1] == 2 && arrayTwo[1] == 2 && arrayThree[1] == 2) || (arrayOne[2] == 2 && arrayTwo[2] == 2 && arrayThree[2] == 2)){
-//     System.Console.WriteLine("Вы вобедили");
-//     break;
-//    }
-  
-// }
 
 
 
